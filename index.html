@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soft Music-player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/fontawesome.min.css" integrity="sha512-shT5e46zNSD6lt4dlJHb+7LoUko9QZXTGlmWWx0qjI9UhQrElRb+Q5DM7SVte9G9ZNmovz2qIaV7IWv0xQkBkw==" crossorigin="anonymous" />
+</head>
+<body>
+    <div class="card">
+        <div class="header-state">
+            <div class="icon1">
+                <i class="fa fa-caret-left"></i>
+            </div>
+            <div class="state">
+                <p>Playing...</p>
+            </div>
+            <div class="icon2">
+                <i class="fa fa-list"></i>
+            </div>
+        </div>
+        <div class="album-image">
+            <img src="music-album.jpg" width="200px"; height="210px" alt="">
+            <h2 class="album-name">Merry Xmas</h2>
+            <p class="artist-name">El Pasica</p>
+        </div>
+        <div class="music-timeline"> 
+            <div class="slider player__progress-bar">
+                <input type="range" :value="player.elapsed" :max="currentTrack.duration" />
+            </div>
+            <div class="time">
+                <div class="start-time">0.57</div>
+                <div class="end-time">4.54</div>
+            </div>
+            <div class="music-icons">
+               <div>
+                <i class="fa fa-redo"></i>
+               </div>
+              <div>
+                <i class="fas fa-backward"></i>
+              </div>
+              <div>
+                <i class="fas fa-play fa-2x" id="big"></i>
+              </div>
+              <div>
+                <i class="fas fa-forward"></i>
+              </div>
+               <div>
+                <i class="fa fa-mobile"></i>
+               </div>
+            </div>
+            <div class="underline"></div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/fontawesome.min.js" integrity="sha512-pafh0hrrT9ZPZl/jx0cwyp7N2+ozgQf+YK94jSupHHLD2lcEYTLxEju4mW/2sbn4qFEfxJGZyIX/yJiQvgglpw==" crossorigin="anonymous"></script>
+</body>
+</html>

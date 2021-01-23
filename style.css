@@ -1,0 +1,124 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background: #f1f3f6;
+    color: #693429;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: visible;
+}
+
+i{
+    cursor: pointer;
+}
+
+.card{
+    background-color:#eee ;
+    width: 350px;
+    box-shadow: 12px 3px 13px rgb(116, 115, 115,0.8), -3px -3px 13px #fff ;
+    height: 600px; 
+    border-radius: 60px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.header-state{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 2em;
+    align-items: center;
+}
+
+.header-state .fa{
+    font-size: 25px;
+    padding: 5px 10px;
+    background-color: #eee;
+  box-shadow: 5px 7px 9px rgba(0,0,0,0.15), -7px -7px 9px rgba(255,255,255,0.65);
+    border-radius: 10px;
+}
+
+.header-state p{
+    font-size: 14px;
+    padding: 0 2em;
+}
+
+.album-image img{
+    border-radius: 30px;
+    padding: 1em;
+}
+
+.album-image .album-name{
+    padding: 20px 10px 0px 10px;
+}
+
+.slider {
+    margin: 1em 0 0 0;
+    line-height: 1em;
+    overflow: hidden;
+    padding: 6px 0;
+  }
+.slider [type=range] {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background: #693429;
+    height: 4px;
+    position: relative;
+    width: 80%;
+  }
+
+.slider [type=range]:focus {
+    outline: none;
+  }
+  
+.slider [type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+            appearance: none;
+    background-color: #693429;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 15px;
+    position: relative;
+    width: 20px;
+  }
+
+
+.time{
+      display: flex;
+      justify-content: space-between;
+      padding: .3em 2em
+  }
+
+
+.music-icons{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 3em 2em;
+}
+
+.music-icons div{
+    padding: .5em;
+    background-color: #eee;
+    box-shadow: 5px 7px 7px rgba(0,0,0,0.15), -3px -3px 5px rgba(255,255,255,0.65);
+    border-radius: 50px;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-top: -25px;
+}
+
+.music-icons .fa-play{
+    padding: .7em;
+}
+
